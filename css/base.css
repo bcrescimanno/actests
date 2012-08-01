@@ -11,6 +11,7 @@ h1, p {
 }
 
 #pageContainer {
+    position: absolute;
     width: 1920px;
     height: 1080px;
     overflow: hidden;
