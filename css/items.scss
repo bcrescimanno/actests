@@ -1,0 +1,6 @@
+@for $i from 0 through 19 {
+    .item#{$i} {
+        $val: 10px + ($i * 325px);
+        -webkit-transform: translate3d($val, 0, 0);
+    }
+}

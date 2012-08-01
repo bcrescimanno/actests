@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;j
+    font-family: Helvetica, Arial, Sans;
+    background: #333;
+    color: #ebebeb;
+}
+
+h1, p {
+    margin-left: 20px;
+}
+
+#pageContainer {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    -webkit-transform: translateZ(0);
+}
+
+.item {
+    position: absolute;
+    width: 315px;
+    height: 450px;
+    background: #cdcdcd;
+    -webkit-transform: translateZ(0);
+    -webkit-transition-duration: 0.5s;
+}
+
