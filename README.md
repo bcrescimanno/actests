@@ -2,7 +2,8 @@ AC Tests
 ========
 
 A small set of accelerated compositing tests to determine the internal impact of each different
-technique for rendering a large set of data in a row format.
+technique for rendering a large set of data in a row format. I'll be adding to these as time
+goes by.
 
 Usage
 -----
