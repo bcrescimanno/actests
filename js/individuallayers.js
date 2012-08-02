@@ -34,6 +34,7 @@ function redraw () {
 }
 
 function handleKeyInput (e) {
+    e.preventDefault();
     if (CONFIG.currentTop === (CONFIG.containers - 1)) {
         CONFIG.currentTop = 0;
     } else {

@@ -9,12 +9,13 @@ var CONFIG = {
     topOffsetBy: 0
 };
 
-function handleKeyInput() {
+function handleKeyInput(e) {
     var move = document.getElementById("movingWrapper"),
         containers = document.getElementsByClassName("container"),
         newTop = CONFIG.topOffset - CONFIG.height,
         newOffset;
 
+    e.preventDefault();
 
     newOffset = (CONFIG.topOffsetBy * CONFIG.height) + (CONFIG.height * CONFIG.containers);
     CONFIG.topOffsetBy++;
