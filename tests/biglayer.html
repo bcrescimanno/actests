@@ -1,17 +1,18 @@
 <!doctype html>
 <html>
 <head>
-<title> Accelerated Compositing Test - Moving Container of Containers</title>
-    <link rel="stylesheet" href="css/base.css">
+<title> Accelerated Compositing Test - Big Layers</title>
+    <link rel="stylesheet" href="../css/base.css">
     <style>
-        #movingWrapper {
-            position: absolute;
+        .container {
             -webkit-transition-duration: 0.5s;
-            -webkit-transform: translateZ(0);
+            width: 1920px;
+            height: 450px;
         }
 
         .item {
             -webkit-transition: none;
+            -webkit-transform: none;
         }
     </style>
 
@@ -20,13 +21,9 @@
 <body>
 
 <div id="pageContainer">
-    <h1> Accelerated Compositing Test - Moving Container of Containers</h1>
-    <p>
-        In this test, we'll move a large container around smaller containers and simply reposition
-        the smaller containers within the larger one to achieve the desired effect.
-    </p>
+    <h1> Accelerated Compositing Test - Big Layers</h1>
+    <p>In this test, we'll move one big layer (the container)</p>
     
-    <div id="movingWrapper">
     <div class="container">
         <div class="item"></div>
         <div class="item"></div>
@@ -114,11 +111,10 @@
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
-    </div>
     </div>
 </div>
 
-<script src="js/containerofcontainer.js"></script>
+<script src="../js/biglayer.js"></script>
 <script>
     setup();
 </script>

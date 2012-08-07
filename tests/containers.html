@@ -1,18 +1,15 @@
 <!doctype html>
 <html>
 <head>
-<title> Accelerated Compositing Test - Big Layers</title>
-    <link rel="stylesheet" href="css/base.css">
+<title> Accelerated Compositing Test - Moving Containers</title>
+    <link rel="stylesheet" href="../css/base.css">
     <style>
         .container {
             -webkit-transition-duration: 0.5s;
-            width: 1920px;
-            height: 450px;
         }
 
         .item {
             -webkit-transition: none;
-            -webkit-transform: none;
         }
     </style>
 
@@ -21,8 +18,8 @@
 <body>
 
 <div id="pageContainer">
-    <h1> Accelerated Compositing Test - Big Layers</h1>
-    <p>In this test, we'll move one big layer (the container)</p>
+    <h1> Accelerated Compositing Test - Moving Containers</h1>
+    <p>In this test, we'll move the contianers around the layers</p>
     
     <div class="container">
         <div class="item"></div>
@@ -114,7 +111,7 @@
     </div>
 </div>
 
-<script src="js/biglayer.js"></script>
+<script src="../js/containers.js"></script>
 <script>
     setup();
 </script>
