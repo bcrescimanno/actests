@@ -4,15 +4,21 @@
 <title> Accelerated Compositing Test - Big Layers</title>
     <link rel="stylesheet" href="../css/base.css">
     <style>
+        #pageContainer {
+            width: 1280px;
+            height: 720px;
+        }
         .container {
             -webkit-transition-duration: 0.5s;
-            width: 1920px;
-            height: 450px;
+            width: 1280px;
+            height: 300px;
         }
 
         .item {
             -webkit-transition: none;
             -webkit-transform: none;
+            width: 210px;
+            height: 300px;
         }
     </style>
 
@@ -117,9 +123,9 @@
 <script>
 var CONFIG = {
     baseOffset: 10,
-    width: 325,
+    width: 325 * 0.666,
     baseTop: 0,
-    height: 500,
+    height: 500 * 0.666,
     containers: 4,
     currentTop: 0
 };
@@ -131,3 +137,4 @@ var CONFIG = {
 </body>
 
 </html>
+
